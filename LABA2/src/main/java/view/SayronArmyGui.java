@@ -30,8 +30,9 @@ public class SayronArmyGui extends JFrame {
         this.controller = controller;
         
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(1000, 600);
+        setSize(800, 600);
         setLayout(new BorderLayout());
+        setLocationRelativeTo(null);
 
         DefaultMutableTreeNode root = new DefaultMutableTreeNode("Армия");
         for (Tribe tribe : Tribe.values()) {
